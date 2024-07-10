@@ -11,7 +11,7 @@
                 CARI KOSAN atau KONTRAKAN TERBAIKMU
             </h1>
             <p class="mb-5 text-gray-700">
-                Selamat datang di [Nama Website], platform terbaik untuk menemukan kosan yang nyaman dan terjangkau.
+                Selamat datang di KosKita, platform terbaik untuk menemukan kosan yang nyaman dan terjangkau.
                 Kami menyediakan berbagai pilihan hunian berkualitas yang sesuai dengan kebutuhan dan budget Anda.
                 Dengan fitur pencarian yang mudah dan informasi yang lengkap, Anda dapat menemukan tempat tinggal ideal
                 hanya dengan beberapa klik. Temukan kos impian Anda bersama kami dan nikmati kenyamanan tinggal di

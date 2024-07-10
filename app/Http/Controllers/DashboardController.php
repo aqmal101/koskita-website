@@ -1,13 +1,16 @@
-<?
-namespace App\Http\Controllers\Admin;
+<?php
 
-use App\Http\Controllers\Controller;
+namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view('admin.dashboard');
+        // Contoh pengambilan data atau logika lainnya sebelum menampilkan halaman
+        $userData = auth()->user(); // Contoh pengambilan data user
+
+        return view('dashboard', compact('userData'));
     }
 }

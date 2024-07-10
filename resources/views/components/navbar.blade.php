@@ -7,11 +7,11 @@
         <div class="flex-none gap-2">
             @guest
             @if (Route::has('login') && Route::currentRouteName() !== 'login' && Route::currentRouteName() !==
-            'register' )
+            'register')
             <a href="{{ route('login') }}" class="prime-btn">Masuk</a>
             <!-- @if (Route::has('register'))
-                                            <a href="{{ route('register') }}" class="btn">Register</a>
-                                            @endif -->
+    <a href="{{ route('register') }}" class="btn">Register</a>
+    @endif -->
             @endif
             @else
             <div class="dropdown dropdown-end">

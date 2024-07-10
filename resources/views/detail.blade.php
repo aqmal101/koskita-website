@@ -11,7 +11,7 @@
                 <h1 class="font-bold text-3xl lg:text-4xl">{{ $kostan->nama_kosan }}</h1>
                 <div>
                     <p class="text-muted-foreground">
-                        {{ $kostan->description }}
+                        {{ $kostan->deskripsi }}
                     </p>
                 </div>
             </div>
@@ -30,38 +30,38 @@
                     <div class="font-semibold">Fasilitas:</div>
                     <ul class="grid gap-2 text-muted-foreground">
                         @if($kostan->kamar_mandi_dalam)
-                        <li class="flex items-center gap-4">
-                            <i class="fa-solid fa-shower text-green-600 text-xl"></i>
-                            Kamar mandi dalam
-                        </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fa-solid fa-shower text-green-600 text-xl"></i>
+                                Kamar mandi dalam
+                            </li>
                         @endif
 
                         @if($kostan->dapur_bersama)
-                        <li class="flex items-center gap-4">
-                            <i class="fa-solid fa-fire-burner text-green-600 text-xl"></i>
-                            Dapur bersama
-                        </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fa-solid fa-fire-burner text-green-600 text-xl"></i>
+                                Dapur bersama
+                            </li>
                         @endif
 
                         @if($kostan->wifi)
-                        <li class="flex items-center gap-4">
-                            <i class="fa-solid fa-wifi text-green-600 text-xl"></i>
-                            Wifi
-                        </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fa-solid fa-wifi text-green-600 text-xl"></i>
+                                Wifi
+                            </li>
                         @endif
 
                         @if($kostan->listrik)
-                        <li class="flex items-center gap-4">
-                            <i class="fa-solid fa-bolt text-green-600 text-xl"></i>
-                            Listrik
-                        </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fa-solid fa-bolt text-green-600 text-xl"></i>
+                                Listrik
+                            </li>
                         @endif
 
                         @if($kostan->parkir_luas)
-                        <li class="flex items-center gap-4">
-                            <i class="fa-solid fa-parking text-green-600 text-xl"></i>
-                            Parkir
-                        </li>
+                            <li class="flex items-center gap-4">
+                                <i class="fa-solid fa-parking text-green-600 text-xl"></i>
+                                Parkir
+                            </li>
                         @endif
 
                     </ul>

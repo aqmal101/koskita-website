@@ -7,7 +7,7 @@
             <p class="mb-5">
                 Temukan Kenyamanan di Kos Impian atau Kelola Kosan Anda dengan Mudah dan Efisien.
             </p>
-            <button class="prime-btn py-3">Mulai Jelajah</button>
+            <a href="{{ route('home') }}" class="prime-btn py-3">Mulai Jelajah</a>
         </div>
     </div>
 </div>

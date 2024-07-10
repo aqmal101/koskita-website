@@ -4,24 +4,25 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Auth;
 
 class isAdmin
 {
-
     /**
-     * Handle an incoming request
-     * @param \Illuminate\Http\Request  $request
-     * @param \Closure $next
-     * @param mixed 
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
      */
-
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next)
     {
-        if (auth()->user()->is_admin == 1) {
+        // Memeriksa apakah pengguna sedang login dan memiliki role 'admin'
+        if (Auth::check() && Auth::user()->role === 'admin') {
             return $next($request);
         }
 
-        return redirect('/')->with(403, 'Unauthorized action.');
+        // Jika tidak, kembalikan response 403 Unauthorized
+        abort(403, 'Unauthorized action.');
     }
 }
