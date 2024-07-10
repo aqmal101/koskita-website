@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .prime-btn {
+        @apply bg-green-600 text-white pt-2 pb-2 pl-5 pr-5 rounded-lg;
+    }
+}
