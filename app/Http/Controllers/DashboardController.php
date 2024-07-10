@@ -11,6 +11,6 @@ class DashboardController extends Controller
         // Contoh pengambilan data atau logika lainnya sebelum menampilkan halaman
         $userData = auth()->user(); // Contoh pengambilan data user
 
-        return view('dashboard', compact('userData'));
+        return view('admin.dashboard', compact('userData'));
     }
 }

@@ -22,5 +22,5 @@ Route::middleware([IsUser::class])->group(function () {
 });
 
 Route::middleware([isAdmin::class])->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 });
